@@ -14,22 +14,8 @@
 		4C95FB1418DE99F3006EC0D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB1318DE99F3006EC0D0 /* main.m */; };
 		4C95FB1818DE99F3006EC0D0 /* DCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB1718DE99F3006EC0D0 /* DCAppDelegate.m */; };
 		4C95FB1A18DE99F3006EC0D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C95FB1918DE99F3006EC0D0 /* Images.xcassets */; };
-		4C95FB2118DE99F3006EC0D0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C95FB2018DE99F3006EC0D0 /* XCTest.framework */; };
-		4C95FB2218DE99F3006EC0D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C95FB0718DE99F3006EC0D0 /* Foundation.framework */; };
-		4C95FB2318DE99F3006EC0D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C95FB0B18DE99F3006EC0D0 /* UIKit.framework */; };
-		4C95FB2B18DE99F3006EC0D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C95FB2918DE99F3006EC0D0 /* InfoPlist.strings */; };
-		4C95FB2D18DE99F3006EC0D0 /* DCThumbnailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB2C18DE99F3006EC0D0 /* DCThumbnailTests.m */; };
+		4C95FB3918DE9B2F006EC0D0 /* DCThumnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB3818DE9B2F006EC0D0 /* DCThumnail.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4C95FB2418DE99F3006EC0D0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C95FAFC18DE99F3006EC0D0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C95FB0318DE99F3006EC0D0;
-			remoteInfo = DCThumbnail;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4C95FB0418DE99F3006EC0D0 /* DCThumbnail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCThumbnail.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,11 +29,8 @@
 		4C95FB1618DE99F3006EC0D0 /* DCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCAppDelegate.h; sourceTree = "<group>"; };
 		4C95FB1718DE99F3006EC0D0 /* DCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCAppDelegate.m; sourceTree = "<group>"; };
 		4C95FB1918DE99F3006EC0D0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4C95FB1F18DE99F3006EC0D0 /* DCThumbnailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCThumbnailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C95FB2018DE99F3006EC0D0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		4C95FB2818DE99F3006EC0D0 /* DCThumbnailTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCThumbnailTests-Info.plist"; sourceTree = "<group>"; };
-		4C95FB2A18DE99F3006EC0D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4C95FB2C18DE99F3006EC0D0 /* DCThumbnailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCThumbnailTests.m; sourceTree = "<group>"; };
+		4C95FB3718DE9B2F006EC0D0 /* DCThumnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCThumnail.h; sourceTree = "<group>"; };
+		4C95FB3818DE9B2F006EC0D0 /* DCThumnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCThumnail.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,24 +44,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C95FB1C18DE99F3006EC0D0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C95FB2118DE99F3006EC0D0 /* XCTest.framework in Frameworks */,
-				4C95FB2318DE99F3006EC0D0 /* UIKit.framework in Frameworks */,
-				4C95FB2218DE99F3006EC0D0 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		4C95FAFB18DE99F3006EC0D0 = {
 			isa = PBXGroup;
 			children = (
-				4C95FB0D18DE99F3006EC0D0 /* DCThumbnail */,
-				4C95FB2618DE99F3006EC0D0 /* DCThumbnailTests */,
+				4C95FB3618DE9B21006EC0D0 /* DCThumbnail */,
+				4C95FB0D18DE99F3006EC0D0 /* Example App */,
 				4C95FB0618DE99F3006EC0D0 /* Frameworks */,
 				4C95FB0518DE99F3006EC0D0 /* Products */,
 			);
@@ -88,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				4C95FB0418DE99F3006EC0D0 /* DCThumbnail.app */,
-				4C95FB1F18DE99F3006EC0D0 /* DCThumbnailTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,12 +71,11 @@
 				4C95FB0718DE99F3006EC0D0 /* Foundation.framework */,
 				4C95FB0918DE99F3006EC0D0 /* CoreGraphics.framework */,
 				4C95FB0B18DE99F3006EC0D0 /* UIKit.framework */,
-				4C95FB2018DE99F3006EC0D0 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4C95FB0D18DE99F3006EC0D0 /* DCThumbnail */ = {
+		4C95FB0D18DE99F3006EC0D0 /* Example App */ = {
 			isa = PBXGroup;
 			children = (
 				4C95FB1618DE99F3006EC0D0 /* DCAppDelegate.h */,
@@ -112,6 +83,7 @@
 				4C95FB1918DE99F3006EC0D0 /* Images.xcassets */,
 				4C95FB0E18DE99F3006EC0D0 /* Supporting Files */,
 			);
+			name = "Example App";
 			path = DCThumbnail;
 			sourceTree = "<group>";
 		};
@@ -126,22 +98,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4C95FB2618DE99F3006EC0D0 /* DCThumbnailTests */ = {
+		4C95FB3618DE9B21006EC0D0 /* DCThumbnail */ = {
 			isa = PBXGroup;
 			children = (
-				4C95FB2C18DE99F3006EC0D0 /* DCThumbnailTests.m */,
-				4C95FB2718DE99F3006EC0D0 /* Supporting Files */,
+				4C95FB3718DE9B2F006EC0D0 /* DCThumnail.h */,
+				4C95FB3818DE9B2F006EC0D0 /* DCThumnail.m */,
 			);
-			path = DCThumbnailTests;
-			sourceTree = "<group>";
-		};
-		4C95FB2718DE99F3006EC0D0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4C95FB2818DE99F3006EC0D0 /* DCThumbnailTests-Info.plist */,
-				4C95FB2918DE99F3006EC0D0 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			name = DCThumbnail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,24 +127,6 @@
 			productReference = 4C95FB0418DE99F3006EC0D0 /* DCThumbnail.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4C95FB1E18DE99F3006EC0D0 /* DCThumbnailTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4C95FB3318DE99F3006EC0D0 /* Build configuration list for PBXNativeTarget "DCThumbnailTests" */;
-			buildPhases = (
-				4C95FB1B18DE99F3006EC0D0 /* Sources */,
-				4C95FB1C18DE99F3006EC0D0 /* Frameworks */,
-				4C95FB1D18DE99F3006EC0D0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4C95FB2518DE99F3006EC0D0 /* PBXTargetDependency */,
-			);
-			name = DCThumbnailTests;
-			productName = DCThumbnailTests;
-			productReference = 4C95FB1F18DE99F3006EC0D0 /* DCThumbnailTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,11 +136,6 @@
 				CLASSPREFIX = DC;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = DeskConnnect;
-				TargetAttributes = {
-					4C95FB1E18DE99F3006EC0D0 = {
-						TestTargetID = 4C95FB0318DE99F3006EC0D0;
-					};
-				};
 			};
 			buildConfigurationList = 4C95FAFF18DE99F3006EC0D0 /* Build configuration list for PBXProject "DCThumbnail" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -210,7 +150,6 @@
 			projectRoot = "";
 			targets = (
 				4C95FB0318DE99F3006EC0D0 /* DCThumbnail */,
-				4C95FB1E18DE99F3006EC0D0 /* DCThumbnailTests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,14 +164,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C95FB1D18DE99F3006EC0D0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C95FB2B18DE99F3006EC0D0 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -242,40 +173,17 @@
 			files = (
 				4C95FB1418DE99F3006EC0D0 /* main.m in Sources */,
 				4C95FB1818DE99F3006EC0D0 /* DCAppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C95FB1B18DE99F3006EC0D0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C95FB2D18DE99F3006EC0D0 /* DCThumbnailTests.m in Sources */,
+				4C95FB3918DE9B2F006EC0D0 /* DCThumnail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4C95FB2518DE99F3006EC0D0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C95FB0318DE99F3006EC0D0 /* DCThumbnail */;
-			targetProxy = 4C95FB2418DE99F3006EC0D0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4C95FB1018DE99F3006EC0D0 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4C95FB1118DE99F3006EC0D0 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		4C95FB2918DE99F3006EC0D0 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4C95FB2A18DE99F3006EC0D0 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -379,46 +287,6 @@
 			};
 			name = Release;
 		};
-		4C95FB3418DE99F3006EC0D0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DCThumbnail.app/DCThumbnail";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DCThumbnail/DCThumbnail-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "DCThumbnailTests/DCThumbnailTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		4C95FB3518DE99F3006EC0D0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DCThumbnail.app/DCThumbnail";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DCThumbnail/DCThumbnail-Prefix.pch";
-				INFOPLIST_FILE = "DCThumbnailTests/DCThumbnailTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -436,14 +304,6 @@
 			buildConfigurations = (
 				4C95FB3118DE99F3006EC0D0 /* Debug */,
 				4C95FB3218DE99F3006EC0D0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		4C95FB3318DE99F3006EC0D0 /* Build configuration list for PBXNativeTarget "DCThumbnailTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4C95FB3418DE99F3006EC0D0 /* Debug */,
-				4C95FB3518DE99F3006EC0D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
