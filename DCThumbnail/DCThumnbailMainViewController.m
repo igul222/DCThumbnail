@@ -47,7 +47,7 @@
 
 -(NSArray *)thumbnailTypes {
     return @[
-             @[@"Web URL", [NSURL URLWithString:@"http://deskconnect.com"]],
+             @[@"Web URL", [NSURL URLWithString:@"http://yahoo.com"]],
              @[@"Image", [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"image.jpg" ofType:nil inDirectory:nil]] ]
              ];
 }

@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DCThumbnail : NSObject {
+@interface DCThumbnail : NSObject <UIWebViewDelegate> {
     NSURL *_URL;
+    void (^_callback)(UIImage *);
+    UIWebView *_webView;
+    int framesLoaded;
 }
 
 -(id)initWithURL:(NSURL *)URL;

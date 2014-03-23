@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DCThumbnailDetailViewController : UIViewController
+@class DCThumbnail;
+@interface DCThumbnailDetailViewController : UIViewController {
+    DCThumbnail *renderer;
+}
 
 -(void)loadURL:(NSURL *)URL;
 
