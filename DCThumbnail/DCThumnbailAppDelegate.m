@@ -6,14 +6,21 @@
 //  Copyright (c) 2014 DeskConnnect. All rights reserved.
 //
 
-#import "DCAppDelegate.h"
+#import "DCThumnbailAppDelegate.h"
+#import "DCThumnbailMainViewController.h"
 
-@implementation DCAppDelegate
+@implementation DCThumnbailAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Override point for customization after application launch.
+    DCThumnbailMainViewController *mainViewController = [[DCThumnbailMainViewController alloc] initWithStyle:UITableViewStylePlain];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    self.window.rootViewController = self.navigationController;
+    [self.window addSubview:self.navigationController.view];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

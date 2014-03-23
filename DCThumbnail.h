@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DCThumnail : NSObject {
+@interface DCThumbnail : NSObject {
     NSURL *_URL;
 }
 
 -(id)initWithURL:(NSURL *)URL;
+-(void)beginRenderingWithSize:(CGSize)size completion:(void (^)(UIImage *))completion;
 
 @end

@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 DeskConnnect. All rights reserved.
 //
 
-#import "DCThumnail.h"
+#import "DCThumbnail.h"
 
-@implementation DCThumnail
+@implementation DCThumbnail
 
 -(id)initWithURL:(NSURL *)URL {
     self = [super init];
@@ -16,6 +16,10 @@
         _URL = URL;
     }
     return self;
+}
+
+-(void)beginRenderingWithSize:(CGSize)size completion:(void (^)(UIImage *))completion {
+    // TODO: implement
 }
 
 @end

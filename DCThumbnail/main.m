@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "DCAppDelegate.h"
+#import "DCThumnbailAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([DCAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([DCThumnbailAppDelegate class]));
     }
 }

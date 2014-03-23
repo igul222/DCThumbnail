@@ -12,9 +12,12 @@
 		4C95FB0C18DE99F3006EC0D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C95FB0B18DE99F3006EC0D0 /* UIKit.framework */; };
 		4C95FB1218DE99F3006EC0D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C95FB1018DE99F3006EC0D0 /* InfoPlist.strings */; };
 		4C95FB1418DE99F3006EC0D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB1318DE99F3006EC0D0 /* main.m */; };
-		4C95FB1818DE99F3006EC0D0 /* DCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB1718DE99F3006EC0D0 /* DCAppDelegate.m */; };
+		4C95FB1818DE99F3006EC0D0 /* DCThumnbailAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB1718DE99F3006EC0D0 /* DCThumnbailAppDelegate.m */; };
 		4C95FB1A18DE99F3006EC0D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C95FB1918DE99F3006EC0D0 /* Images.xcassets */; };
-		4C95FB3918DE9B2F006EC0D0 /* DCThumnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB3818DE9B2F006EC0D0 /* DCThumnail.m */; };
+		4C95FB3918DE9B2F006EC0D0 /* DCThumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB3818DE9B2F006EC0D0 /* DCThumbnail.m */; };
+		4C95FB4218DEA2DA006EC0D0 /* DCThumnbailMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB4118DEA2DA006EC0D0 /* DCThumnbailMainViewController.m */; };
+		4C95FB4418DEA7CD006EC0D0 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C95FB4318DEA7CD006EC0D0 /* image.jpg */; };
+		4C95FB4718DEA8E9006EC0D0 /* DCThumbnailDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB4618DEA8E9006EC0D0 /* DCThumbnailDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,11 +29,16 @@
 		4C95FB1118DE99F3006EC0D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C95FB1318DE99F3006EC0D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C95FB1518DE99F3006EC0D0 /* DCThumbnail-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCThumbnail-Prefix.pch"; sourceTree = "<group>"; };
-		4C95FB1618DE99F3006EC0D0 /* DCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCAppDelegate.h; sourceTree = "<group>"; };
-		4C95FB1718DE99F3006EC0D0 /* DCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCAppDelegate.m; sourceTree = "<group>"; };
+		4C95FB1618DE99F3006EC0D0 /* DCThumnbailAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCThumnbailAppDelegate.h; sourceTree = "<group>"; };
+		4C95FB1718DE99F3006EC0D0 /* DCThumnbailAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCThumnbailAppDelegate.m; sourceTree = "<group>"; };
 		4C95FB1918DE99F3006EC0D0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4C95FB3718DE9B2F006EC0D0 /* DCThumnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCThumnail.h; sourceTree = "<group>"; };
-		4C95FB3818DE9B2F006EC0D0 /* DCThumnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCThumnail.m; sourceTree = "<group>"; };
+		4C95FB3718DE9B2F006EC0D0 /* DCThumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCThumbnail.h; sourceTree = "<group>"; };
+		4C95FB3818DE9B2F006EC0D0 /* DCThumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCThumbnail.m; sourceTree = "<group>"; };
+		4C95FB4018DEA2DA006EC0D0 /* DCThumnbailMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCThumnbailMainViewController.h; sourceTree = "<group>"; };
+		4C95FB4118DEA2DA006EC0D0 /* DCThumnbailMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCThumnbailMainViewController.m; sourceTree = "<group>"; };
+		4C95FB4318DEA7CD006EC0D0 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		4C95FB4518DEA8E9006EC0D0 /* DCThumbnailDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCThumbnailDetailViewController.h; sourceTree = "<group>"; };
+		4C95FB4618DEA8E9006EC0D0 /* DCThumbnailDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCThumbnailDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				4C95FB3618DE9B21006EC0D0 /* DCThumbnail */,
-				4C95FB0D18DE99F3006EC0D0 /* Example App */,
+				4C95FB0D18DE99F3006EC0D0 /* Demo App */,
 				4C95FB0618DE99F3006EC0D0 /* Frameworks */,
 				4C95FB0518DE99F3006EC0D0 /* Products */,
 			);
@@ -75,15 +83,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4C95FB0D18DE99F3006EC0D0 /* Example App */ = {
+		4C95FB0D18DE99F3006EC0D0 /* Demo App */ = {
 			isa = PBXGroup;
 			children = (
-				4C95FB1618DE99F3006EC0D0 /* DCAppDelegate.h */,
-				4C95FB1718DE99F3006EC0D0 /* DCAppDelegate.m */,
+				4C95FB1618DE99F3006EC0D0 /* DCThumnbailAppDelegate.h */,
+				4C95FB1718DE99F3006EC0D0 /* DCThumnbailAppDelegate.m */,
+				4C95FB4018DEA2DA006EC0D0 /* DCThumnbailMainViewController.h */,
+				4C95FB4118DEA2DA006EC0D0 /* DCThumnbailMainViewController.m */,
+				4C95FB4518DEA8E9006EC0D0 /* DCThumbnailDetailViewController.h */,
+				4C95FB4618DEA8E9006EC0D0 /* DCThumbnailDetailViewController.m */,
+				4C95FB4318DEA7CD006EC0D0 /* image.jpg */,
 				4C95FB1918DE99F3006EC0D0 /* Images.xcassets */,
 				4C95FB0E18DE99F3006EC0D0 /* Supporting Files */,
 			);
-			name = "Example App";
+			name = "Demo App";
 			path = DCThumbnail;
 			sourceTree = "<group>";
 		};
@@ -101,8 +114,8 @@
 		4C95FB3618DE9B21006EC0D0 /* DCThumbnail */ = {
 			isa = PBXGroup;
 			children = (
-				4C95FB3718DE9B2F006EC0D0 /* DCThumnail.h */,
-				4C95FB3818DE9B2F006EC0D0 /* DCThumnail.m */,
+				4C95FB3718DE9B2F006EC0D0 /* DCThumbnail.h */,
+				4C95FB3818DE9B2F006EC0D0 /* DCThumbnail.m */,
 			);
 			name = DCThumbnail;
 			sourceTree = "<group>";
@@ -159,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C95FB4418DEA7CD006EC0D0 /* image.jpg in Resources */,
 				4C95FB1218DE99F3006EC0D0 /* InfoPlist.strings in Resources */,
 				4C95FB1A18DE99F3006EC0D0 /* Images.xcassets in Resources */,
 			);
@@ -171,9 +185,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C95FB4218DEA2DA006EC0D0 /* DCThumnbailMainViewController.m in Sources */,
 				4C95FB1418DE99F3006EC0D0 /* main.m in Sources */,
-				4C95FB1818DE99F3006EC0D0 /* DCAppDelegate.m in Sources */,
-				4C95FB3918DE9B2F006EC0D0 /* DCThumnail.m in Sources */,
+				4C95FB1818DE99F3006EC0D0 /* DCThumnbailAppDelegate.m in Sources */,
+				4C95FB3918DE9B2F006EC0D0 /* DCThumbnail.m in Sources */,
+				4C95FB4718DEA8E9006EC0D0 /* DCThumbnailDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

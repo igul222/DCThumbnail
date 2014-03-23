@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DCAppDelegate : UIResponder <UIApplicationDelegate>
+@interface DCThumnbailAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UINavigationController *navigationController;
 
 @end
