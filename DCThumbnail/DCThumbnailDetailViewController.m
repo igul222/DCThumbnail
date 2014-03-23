@@ -37,9 +37,15 @@
 }
 
 -(void)loadURL:(NSURL *)URL {
+    NSLog(@"loadurl");
     [[[DCThumbnail alloc] initWithURL:URL] beginRenderingWithSize:CGSizeMake(400, 400) completion:^(UIImage *image) {
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
         imageView.image = image;
+
+        imageView.contentMode = UIViewContentModeScaleAspectFill;
+        imageView.clipsToBounds = YES;
+        imageView.center = CGPointMake(round(self.view.bounds.size.width / 2), round(self.view.bounds.size.height / 2));
+
         [self.view addSubview:imageView];
     }];
 }

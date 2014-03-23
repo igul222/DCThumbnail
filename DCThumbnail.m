@@ -7,6 +7,8 @@
 //
 
 #import "DCThumbnail.h"
+#import "NSURL+DCUTI.h"
+#import "DCUTI.h"
 
 @implementation DCThumbnail
 
@@ -19,7 +21,15 @@
 }
 
 -(void)beginRenderingWithSize:(CGSize)size completion:(void (^)(UIImage *))completion {
-    // TODO: implement
+    if([_URL isFileURL]) {
+        DCUTI *UTI = [_URL fileUTI];
+        if([UTI conformsToUTI:[DCUTI UTIWithString:@"public.image"]]) {
+            // Don't resize the image manually because UIImageView will do it more efficiently when it renders anyway
+            completion([UIImage imageWithContentsOfFile:[_URL path]]);
+        }
+    } else { // Web URL
+        
+    }
 }
 
 @end

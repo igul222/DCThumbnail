@@ -18,6 +18,8 @@
 		4C95FB4218DEA2DA006EC0D0 /* DCThumnbailMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB4118DEA2DA006EC0D0 /* DCThumnbailMainViewController.m */; };
 		4C95FB4418DEA7CD006EC0D0 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C95FB4318DEA7CD006EC0D0 /* image.jpg */; };
 		4C95FB4718DEA8E9006EC0D0 /* DCThumbnailDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB4618DEA8E9006EC0D0 /* DCThumbnailDetailViewController.m */; };
+		4C95FB4A18DEAC99006EC0D0 /* NSURL+DCUTI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB4918DEAC99006EC0D0 /* NSURL+DCUTI.m */; };
+		4C95FB4D18DEACB7006EC0D0 /* DCUTI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB4C18DEACB7006EC0D0 /* DCUTI.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,11 @@
 		4C95FB4318DEA7CD006EC0D0 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
 		4C95FB4518DEA8E9006EC0D0 /* DCThumbnailDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCThumbnailDetailViewController.h; sourceTree = "<group>"; };
 		4C95FB4618DEA8E9006EC0D0 /* DCThumbnailDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCThumbnailDetailViewController.m; sourceTree = "<group>"; };
+		4C95FB4818DEAC99006EC0D0 /* NSURL+DCUTI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+DCUTI.h"; sourceTree = "<group>"; };
+		4C95FB4918DEAC99006EC0D0 /* NSURL+DCUTI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+DCUTI.m"; sourceTree = "<group>"; };
+		4C95FB4B18DEACB7006EC0D0 /* DCUTI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUTI.h; sourceTree = "<group>"; };
+		4C95FB4C18DEACB7006EC0D0 /* DCUTI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCUTI.m; sourceTree = "<group>"; };
+		4C95FB4E18DEAD0C006EC0D0 /* DCTargets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTargets.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +121,11 @@
 		4C95FB3618DE9B21006EC0D0 /* DCThumbnail */ = {
 			isa = PBXGroup;
 			children = (
+				4C95FB4E18DEAD0C006EC0D0 /* DCTargets.h */,
+				4C95FB4B18DEACB7006EC0D0 /* DCUTI.h */,
+				4C95FB4C18DEACB7006EC0D0 /* DCUTI.m */,
+				4C95FB4818DEAC99006EC0D0 /* NSURL+DCUTI.h */,
+				4C95FB4918DEAC99006EC0D0 /* NSURL+DCUTI.m */,
 				4C95FB3718DE9B2F006EC0D0 /* DCThumbnail.h */,
 				4C95FB3818DE9B2F006EC0D0 /* DCThumbnail.m */,
 			);
@@ -189,6 +201,8 @@
 				4C95FB1418DE99F3006EC0D0 /* main.m in Sources */,
 				4C95FB1818DE99F3006EC0D0 /* DCThumnbailAppDelegate.m in Sources */,
 				4C95FB3918DE9B2F006EC0D0 /* DCThumbnail.m in Sources */,
+				4C95FB4D18DEACB7006EC0D0 /* DCUTI.m in Sources */,
+				4C95FB4A18DEAC99006EC0D0 /* NSURL+DCUTI.m in Sources */,
 				4C95FB4718DEA8E9006EC0D0 /* DCThumbnailDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
