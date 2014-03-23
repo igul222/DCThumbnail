@@ -37,9 +37,10 @@
 }
 
 -(void)loadURL:(NSURL *)URL {
-    NSLog(@"loadurl");
     renderer = [[DCThumbnail alloc] initWithURL:URL];
+
     [renderer beginRenderingWithSize:CGSizeMake(200, 200) completion:^(UIImage *image) {
+
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
         imageView.image = image;
 
@@ -48,6 +49,15 @@
         imageView.center = CGPointMake(round(self.view.bounds.size.width / 2), round(self.view.bounds.size.height / 2));
 
         [self.view addSubview:imageView];
+    
+    } failure:^{
+    
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoa!"
+                                                        message:@"The thumbnail failed to reneder."
+                                                       delegate:nil
+                                              cancelButtonTitle:@":("
+                                              otherButtonTitles:nil];
+        [alert show];
     }];
 }
 

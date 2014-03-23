@@ -10,12 +10,13 @@
 
 @interface DCThumbnail : NSObject <UIWebViewDelegate> {
     NSURL *_URL;
-    void (^_callback)(UIImage *);
     UIWebView *_webView;
+    void (^_completion)(UIImage *);
+    void (^_failure)();
     int framesLoaded;
 }
 
 -(id)initWithURL:(NSURL *)URL;
--(void)beginRenderingWithSize:(CGSize)size completion:(void (^)(UIImage *))completion;
+-(void)beginRenderingWithSize:(CGSize)size completion:(void (^)(UIImage *))completion failure:(void (^)())failure;
 
 @end
