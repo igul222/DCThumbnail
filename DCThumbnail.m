@@ -99,9 +99,7 @@
     framesLoaded++;
     
     // We want to avoid background web pages presenting alerts to the user
-    [_webView stringByEvaluatingJavaScriptFromString:@"window.alert = null"];
-    [_webView stringByEvaluatingJavaScriptFromString:@"window.prompt = null"];
-    [_webView stringByEvaluatingJavaScriptFromString:@"window.confirm = null"];
+    [_webView stringByEvaluatingJavaScriptFromString:@"window.alert = null; window.prompt = null; window.confirm = null;"];
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView {
