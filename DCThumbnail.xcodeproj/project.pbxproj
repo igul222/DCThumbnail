@@ -20,6 +20,8 @@
 		4C95FB4718DEA8E9006EC0D0 /* DCThumbnailDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB4618DEA8E9006EC0D0 /* DCThumbnailDetailViewController.m */; };
 		4C95FB4A18DEAC99006EC0D0 /* NSURL+DCUTI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB4918DEAC99006EC0D0 /* NSURL+DCUTI.m */; };
 		4C95FB4D18DEACB7006EC0D0 /* DCUTI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB4C18DEACB7006EC0D0 /* DCUTI.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4C95FB5018DEE28B006EC0D0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C95FB4F18DEE28B006EC0D0 /* AVFoundation.framework */; };
+		4C95FB5218DF680A006EC0D0 /* movie.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4C95FB5118DF680A006EC0D0 /* movie.m4v */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		4C95FB4B18DEACB7006EC0D0 /* DCUTI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUTI.h; sourceTree = "<group>"; };
 		4C95FB4C18DEACB7006EC0D0 /* DCUTI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCUTI.m; sourceTree = "<group>"; };
 		4C95FB4E18DEAD0C006EC0D0 /* DCTargets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTargets.h; sourceTree = "<group>"; };
+		4C95FB4F18DEE28B006EC0D0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4C95FB5118DF680A006EC0D0 /* movie.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = movie.m4v; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C95FB5018DEE28B006EC0D0 /* AVFoundation.framework in Frameworks */,
 				4C95FB0A18DE99F3006EC0D0 /* CoreGraphics.framework in Frameworks */,
 				4C95FB0C18DE99F3006EC0D0 /* UIKit.framework in Frameworks */,
 				4C95FB0818DE99F3006EC0D0 /* Foundation.framework in Frameworks */,
@@ -83,6 +88,7 @@
 		4C95FB0618DE99F3006EC0D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C95FB4F18DEE28B006EC0D0 /* AVFoundation.framework */,
 				4C95FB0718DE99F3006EC0D0 /* Foundation.framework */,
 				4C95FB0918DE99F3006EC0D0 /* CoreGraphics.framework */,
 				4C95FB0B18DE99F3006EC0D0 /* UIKit.framework */,
@@ -100,6 +106,7 @@
 				4C95FB4518DEA8E9006EC0D0 /* DCThumbnailDetailViewController.h */,
 				4C95FB4618DEA8E9006EC0D0 /* DCThumbnailDetailViewController.m */,
 				4C95FB4318DEA7CD006EC0D0 /* image.jpg */,
+				4C95FB5118DF680A006EC0D0 /* movie.m4v */,
 				4C95FB1918DE99F3006EC0D0 /* Images.xcassets */,
 				4C95FB0E18DE99F3006EC0D0 /* Supporting Files */,
 			);
@@ -186,6 +193,7 @@
 			files = (
 				4C95FB4418DEA7CD006EC0D0 /* image.jpg in Resources */,
 				4C95FB1218DE99F3006EC0D0 /* InfoPlist.strings in Resources */,
+				4C95FB5218DF680A006EC0D0 /* movie.m4v in Resources */,
 				4C95FB1A18DE99F3006EC0D0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

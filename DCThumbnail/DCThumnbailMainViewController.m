@@ -49,7 +49,8 @@
     return @[
              @[@"Web URL", [NSURL URLWithString:@"http://yahoo.com"]],
              @[@"Web URL with alerts", [NSURL URLWithString:@"http://stormy-chamber-5637.herokuapp.com"]],
-             @[@"Image", [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"image.jpg" ofType:nil inDirectory:nil]] ]
+             @[@"Image", [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"image.jpg" ofType:nil inDirectory:nil]] ],
+             @[@"Video", [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"movie.m4v" ofType:nil inDirectory:nil]] ]
              ];
 }
 

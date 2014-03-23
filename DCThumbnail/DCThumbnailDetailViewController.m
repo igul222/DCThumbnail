@@ -40,16 +40,16 @@
     renderer = [[DCThumbnail alloc] initWithURL:URL];
 
     [renderer beginRenderingWithSize:CGSizeMake(200, 200) completion:^(UIImage *image) {
-
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
         imageView.image = image;
 
+        imageView.backgroundColor = [UIColor magentaColor];
         imageView.contentMode = UIViewContentModeScaleAspectFill;
         imageView.clipsToBounds = YES;
         imageView.center = CGPointMake(round(self.view.bounds.size.width / 2), round(self.view.bounds.size.height / 2));
 
         [self.view addSubview:imageView];
-    
+        NSLog(@"done");
     } failure:^{
     
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoa!"

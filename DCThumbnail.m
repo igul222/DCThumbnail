@@ -9,6 +9,7 @@
 #import "DCThumbnail.h"
 #import "NSURL+DCUTI.h"
 #import "DCUTI.h"
+#import <AVFoundation/AVFoundation.h>
 
 @implementation DCThumbnail
 
@@ -23,10 +24,33 @@
 -(void)beginRenderingWithSize:(CGSize)size completion:(void (^)(UIImage *))completion failure:(void (^)())failure {
     if([_URL isFileURL]) {
         DCUTI *UTI = [_URL fileUTI];
+        
         if([UTI conformsToUTI:[DCUTI UTIWithString:@"public.image"]]) {
+
             // Don't resize the image manually because UIImageView will do it more efficiently when it renders anyway
             completion([UIImage imageWithContentsOfFile:[_URL path]]);
+
+        } else if([UTI conformsToUTI:[DCUTI UTIWithString:@"public.mpeg-4"]]) {
+
+            AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:_URL options:nil];
+            AVAssetImageGenerator *generator = [[AVAssetImageGenerator alloc] initWithAsset:asset];
+            generator.appliesPreferredTrackTransform = TRUE;
+
+            // Take the thumbnail halfway through the video
+            CMTime thumbTime = CMTimeMultiplyByRatio(asset.duration, 1, 2);
+            
+            CGFloat scale = [[UIScreen mainScreen] scale];
+            generator.maximumSize = CGSizeMake(size.width * scale, size.height * scale);
+
+            NSError *err;
+            CGImageRef image = [generator copyCGImageAtTime:thumbTime actualTime:NULL error:&err];
+            if(!err) {
+                completion([UIImage imageWithCGImage:image]);
+            } else {
+                failure();
+            }
         }
+        
     } else {
         // Web URL. Create an offscreen UIWebView, load the web page, and take a screenshot when loading completes.
         _completion = completion;
