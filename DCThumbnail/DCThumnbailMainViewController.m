@@ -51,8 +51,9 @@
              @[@"Web URL with alerts", [NSURL URLWithString:@"http://stormy-chamber-5637.herokuapp.com"]],
              @[@"Image", [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"image.jpg" ofType:nil inDirectory:nil]] ],
              @[@"Video", [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"movie.m4v" ofType:nil inDirectory:nil]] ],
-             @[@"Audio (MP3)", [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"mp3.mp3" ofType:nil inDirectory:nil]] ],
-             @[@"Audio (M4A)", [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"m4a.m4a" ofType:nil inDirectory:nil]] ]
+             @[@"Audio (MP3/ID3)", [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"mp3.mp3" ofType:nil inDirectory:nil]] ],
+             @[@"Audio (M4A/iTunes)", [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"m4a.m4a" ofType:nil inDirectory:nil]] ],
+              @[@"Audio (MP3/No Artwork)", [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"mp3-noart.mp3" ofType:nil inDirectory:nil]] ]
              ];
 }
 

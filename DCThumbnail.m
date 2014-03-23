@@ -49,7 +49,36 @@
             } else {
                 failure();
             }
-        } else {
+            
+        } else if([UTI conformsToUTI:[DCUTI UTIWithString:@"public.audio"]]) {
+            
+            AVAsset *asset = [AVURLAsset URLAssetWithURL:_URL options:nil];
+            
+            NSArray *keys = [NSArray arrayWithObjects:@"commonMetadata", nil];
+            
+            [asset loadValuesAsynchronouslyForKeys:keys completionHandler:^{
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    NSArray *artworks = [AVMetadataItem metadataItemsFromArray:asset.commonMetadata
+                                                                       withKey:AVMetadataCommonKeyArtwork
+                                                                      keySpace:AVMetadataKeySpaceCommon];
+                    
+                    for (AVMetadataItem *item in artworks) {
+                        if ([item.keySpace isEqualToString:AVMetadataKeySpaceID3]) {
+                            NSDictionary *dict = [item.value copyWithZone:nil];
+                            completion([UIImage imageWithData:[dict objectForKey:@"data"]]);
+                            return;
+                        } else if ([item.keySpace isEqualToString:AVMetadataKeySpaceiTunes]) {
+                            completion([UIImage imageWithData:[item.value copyWithZone:nil]]);
+                            return;
+                        }
+                    }
+                    
+                    // Nothing found
+                    failure();
+                });
+            }];
+            
+        } else{
             failure();
         }
         

@@ -49,7 +49,6 @@
         imageView.center = CGPointMake(round(self.view.bounds.size.width / 2), round(self.view.bounds.size.height / 2));
 
         [self.view addSubview:imageView];
-        NSLog(@"done");
     } failure:^{
     
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoa!"
