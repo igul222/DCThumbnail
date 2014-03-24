@@ -82,11 +82,15 @@
             
         } else if([UTI conformsToUTI:[DCUTI UTIWithString:@"com.adobe.pdf"]]) {
             
-            UIImage *image = [UIImage imageWithPDFURL:_URL atWidth:size.width*[[UIScreen mainScreen] scale]];
-            if(image)
-                completion(image);
-            else
-                failure();
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                UIImage *image = [UIImage imageWithPDFURL:_URL atWidth:size.width*[[UIScreen mainScreen] scale]];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if(image)
+                        completion(image);
+                    else
+                        failure();
+                });
+            });
             
         } else if([UTI conformsToUTI:[DCUTI UTIWithString:@"public.composite-content"]]) {
             // Documents that aren't web pages, but that UIWebView can usually render (Office, iWork, etc.)
