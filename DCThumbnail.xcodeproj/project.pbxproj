@@ -25,6 +25,8 @@
 		4C95FB5518DF70D7006EC0D0 /* m4a.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4C95FB5318DF70D7006EC0D0 /* m4a.m4a */; };
 		4C95FB5618DF70D7006EC0D0 /* mp3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C95FB5418DF70D7006EC0D0 /* mp3.mp3 */; };
 		4C95FB5818DF7754006EC0D0 /* mp3-noart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C95FB5718DF7754006EC0D0 /* mp3-noart.mp3 */; };
+		4C95FB5B18DF79D5006EC0D0 /* pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4C95FB5918DF79D5006EC0D0 /* pdf.pdf */; };
+		4C95FB5C18DF79D5006EC0D0 /* docx.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4C95FB5A18DF79D5006EC0D0 /* docx.docx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		4C95FB5318DF70D7006EC0D0 /* m4a.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = m4a.m4a; sourceTree = "<group>"; };
 		4C95FB5418DF70D7006EC0D0 /* mp3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3.mp3; sourceTree = "<group>"; };
 		4C95FB5718DF7754006EC0D0 /* mp3-noart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "mp3-noart.mp3"; sourceTree = "<group>"; };
+		4C95FB5918DF79D5006EC0D0 /* pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pdf.pdf; sourceTree = "<group>"; };
+		4C95FB5A18DF79D5006EC0D0 /* docx.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = docx.docx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				4C95FB5318DF70D7006EC0D0 /* m4a.m4a */,
 				4C95FB5418DF70D7006EC0D0 /* mp3.mp3 */,
 				4C95FB5718DF7754006EC0D0 /* mp3-noart.mp3 */,
+				4C95FB5918DF79D5006EC0D0 /* pdf.pdf */,
+				4C95FB5A18DF79D5006EC0D0 /* docx.docx */,
 				4C95FB1918DE99F3006EC0D0 /* Images.xcassets */,
 				4C95FB0E18DE99F3006EC0D0 /* Supporting Files */,
 			);
@@ -201,11 +207,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C95FB4418DEA7CD006EC0D0 /* image.jpg in Resources */,
+				4C95FB5B18DF79D5006EC0D0 /* pdf.pdf in Resources */,
 				4C95FB1218DE99F3006EC0D0 /* InfoPlist.strings in Resources */,
 				4C95FB5218DF680A006EC0D0 /* movie.m4v in Resources */,
 				4C95FB5818DF7754006EC0D0 /* mp3-noart.mp3 in Resources */,
 				4C95FB5618DF70D7006EC0D0 /* mp3.mp3 in Resources */,
 				4C95FB5518DF70D7006EC0D0 /* m4a.m4a in Resources */,
+				4C95FB5C18DF79D5006EC0D0 /* docx.docx in Resources */,
 				4C95FB1A18DE99F3006EC0D0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -53,7 +53,9 @@
              @[@"Video", [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"movie.m4v" ofType:nil inDirectory:nil]] ],
              @[@"Audio (MP3/ID3)", [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"mp3.mp3" ofType:nil inDirectory:nil]] ],
              @[@"Audio (M4A/iTunes)", [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"m4a.m4a" ofType:nil inDirectory:nil]] ],
-              @[@"Audio (MP3/No Artwork)", [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"mp3-noart.mp3" ofType:nil inDirectory:nil]] ]
+              @[@"Audio (MP3/No Artwork)", [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"mp3-noart.mp3" ofType:nil inDirectory:nil]] ],
+             @[@"Document (docx)", [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"docx.docx" ofType:nil inDirectory:nil]] ],
+             @[@"Document (PDF)", [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"pdf.pdf" ofType:nil inDirectory:nil]] ]
              ];
 }
 

@@ -38,7 +38,6 @@
 
 -(void)loadURL:(NSURL *)URL {
     renderer = [[DCThumbnail alloc] initWithURL:URL];
-
     [renderer beginRenderingWithSize:CGSizeMake(200, 200) completion:^(UIImage *image) {
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
         imageView.image = image;
