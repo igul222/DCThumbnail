@@ -51,7 +51,7 @@
     } failure:^{
     
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoa!"
-                                                        message:@"The thumbnail failed to reneder."
+                                                        message:@"The thumbnail failed to render."
                                                        delegate:nil
                                               cancelButtonTitle:@":("
                                               otherButtonTitles:nil];
