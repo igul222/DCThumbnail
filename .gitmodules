@@ -1,0 +1,3 @@
+[submodule "UIImage-PDF"]
+	path = UIImage-PDF
+	url = https://github.com/mindbrix/UIImage-PDF.git

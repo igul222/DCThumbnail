@@ -6,10 +6,12 @@
 //  Copyright (c) 2014 DeskConnnect. All rights reserved.
 //
 
+#import <AVFoundation/AVFoundation.h>
+
 #import "DCThumbnail.h"
 #import "NSURL+DCUTI.h"
 #import "DCUTI.h"
-#import <AVFoundation/AVFoundation.h>
+#import "UIImage-PDF/UIImage+PDF/UIImage+PDF.h"
 
 @implementation DCThumbnail
 
@@ -78,8 +80,16 @@
                 });
             }];
             
+        } else if([UTI conformsToUTI:[DCUTI UTIWithString:@"com.adobe.pdf"]]) {
+            
+            UIImage *image = [UIImage imageWithPDFURL:_URL atWidth:size.width*[[UIScreen mainScreen] scale]];
+            if(image)
+                completion(image);
+            else
+                failure();
+            
         } else if([UTI conformsToUTI:[DCUTI UTIWithString:@"public.composite-content"]]) {
-            // Documents that aren't web pages, but that UIWebView can usually render (PDF, Office, iWork, etc.)
+            // Documents that aren't web pages, but that UIWebView can usually render (Office, iWork, etc.)
             
             [self setupWebViewRenderWithSize:size completion:completion failure:failure];
             [_webView loadRequest:[NSURLRequest requestWithURL:_URL]];

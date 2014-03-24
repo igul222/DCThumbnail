@@ -27,6 +27,12 @@
 		4C95FB5818DF7754006EC0D0 /* mp3-noart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4C95FB5718DF7754006EC0D0 /* mp3-noart.mp3 */; };
 		4C95FB5B18DF79D5006EC0D0 /* pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4C95FB5918DF79D5006EC0D0 /* pdf.pdf */; };
 		4C95FB5C18DF79D5006EC0D0 /* docx.docx in Resources */ = {isa = PBXBuildFile; fileRef = 4C95FB5A18DF79D5006EC0D0 /* docx.docx */; };
+		4C95FB6918E007D5006EC0D0 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4C95FB5E18E007D5006EC0D0 /* LICENSE.txt */; };
+		4C95FB6A18E007D5006EC0D0 /* NSData+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB6018E007D5006EC0D0 /* NSData+MD5.m */; };
+		4C95FB6B18E007D5006EC0D0 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB6218E007D5006EC0D0 /* NSString+MD5.m */; };
+		4C95FB6C18E007D5006EC0D0 /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB6418E007D5006EC0D0 /* PDFView.m */; };
+		4C95FB6D18E007D5006EC0D0 /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB6618E007D5006EC0D0 /* UIImage+PDF.m */; };
+		4C95FB6E18E007D5006EC0D0 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FB6818E007D5006EC0D0 /* UIView+Image.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +66,17 @@
 		4C95FB5718DF7754006EC0D0 /* mp3-noart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "mp3-noart.mp3"; sourceTree = "<group>"; };
 		4C95FB5918DF79D5006EC0D0 /* pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pdf.pdf; sourceTree = "<group>"; };
 		4C95FB5A18DF79D5006EC0D0 /* docx.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = docx.docx; sourceTree = "<group>"; };
+		4C95FB5E18E007D5006EC0D0 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		4C95FB5F18E007D5006EC0D0 /* NSData+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5.h"; sourceTree = "<group>"; };
+		4C95FB6018E007D5006EC0D0 /* NSData+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5.m"; sourceTree = "<group>"; };
+		4C95FB6118E007D5006EC0D0 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		4C95FB6218E007D5006EC0D0 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		4C95FB6318E007D5006EC0D0 /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFView.h; sourceTree = "<group>"; };
+		4C95FB6418E007D5006EC0D0 /* PDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFView.m; sourceTree = "<group>"; };
+		4C95FB6518E007D5006EC0D0 /* UIImage+PDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PDF.h"; sourceTree = "<group>"; };
+		4C95FB6618E007D5006EC0D0 /* UIImage+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDF.m"; sourceTree = "<group>"; };
+		4C95FB6718E007D5006EC0D0 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
+		4C95FB6818E007D5006EC0D0 /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,8 +167,28 @@
 				4C95FB4918DEAC99006EC0D0 /* NSURL+DCUTI.m */,
 				4C95FB3718DE9B2F006EC0D0 /* DCThumbnail.h */,
 				4C95FB3818DE9B2F006EC0D0 /* DCThumbnail.m */,
+				4C95FB5D18E007D5006EC0D0 /* UIImage+PDF */,
 			);
 			name = DCThumbnail;
+			sourceTree = "<group>";
+		};
+		4C95FB5D18E007D5006EC0D0 /* UIImage+PDF */ = {
+			isa = PBXGroup;
+			children = (
+				4C95FB5E18E007D5006EC0D0 /* LICENSE.txt */,
+				4C95FB5F18E007D5006EC0D0 /* NSData+MD5.h */,
+				4C95FB6018E007D5006EC0D0 /* NSData+MD5.m */,
+				4C95FB6118E007D5006EC0D0 /* NSString+MD5.h */,
+				4C95FB6218E007D5006EC0D0 /* NSString+MD5.m */,
+				4C95FB6318E007D5006EC0D0 /* PDFView.h */,
+				4C95FB6418E007D5006EC0D0 /* PDFView.m */,
+				4C95FB6518E007D5006EC0D0 /* UIImage+PDF.h */,
+				4C95FB6618E007D5006EC0D0 /* UIImage+PDF.m */,
+				4C95FB6718E007D5006EC0D0 /* UIView+Image.h */,
+				4C95FB6818E007D5006EC0D0 /* UIView+Image.m */,
+			);
+			name = "UIImage+PDF";
+			path = "UIImage-PDF/UIImage+PDF";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +251,7 @@
 				4C95FB5618DF70D7006EC0D0 /* mp3.mp3 in Resources */,
 				4C95FB5518DF70D7006EC0D0 /* m4a.m4a in Resources */,
 				4C95FB5C18DF79D5006EC0D0 /* docx.docx in Resources */,
+				4C95FB6918E007D5006EC0D0 /* LICENSE.txt in Resources */,
 				4C95FB1A18DE99F3006EC0D0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +266,11 @@
 				4C95FB4218DEA2DA006EC0D0 /* DCThumnbailMainViewController.m in Sources */,
 				4C95FB1418DE99F3006EC0D0 /* main.m in Sources */,
 				4C95FB1818DE99F3006EC0D0 /* DCThumnbailAppDelegate.m in Sources */,
+				4C95FB6D18E007D5006EC0D0 /* UIImage+PDF.m in Sources */,
+				4C95FB6E18E007D5006EC0D0 /* UIView+Image.m in Sources */,
+				4C95FB6B18E007D5006EC0D0 /* NSString+MD5.m in Sources */,
+				4C95FB6A18E007D5006EC0D0 /* NSData+MD5.m in Sources */,
+				4C95FB6C18E007D5006EC0D0 /* PDFView.m in Sources */,
 				4C95FB3918DE9B2F006EC0D0 /* DCThumbnail.m in Sources */,
 				4C95FB4D18DEACB7006EC0D0 /* DCUTI.m in Sources */,
 				4C95FB4A18DEAC99006EC0D0 /* NSURL+DCUTI.m in Sources */,
